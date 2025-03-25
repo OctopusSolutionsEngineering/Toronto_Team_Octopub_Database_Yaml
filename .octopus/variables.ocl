@@ -11,7 +11,3 @@ variable "Octopus.Azure.Account" {
         action = ["create-namespace-if-not-exists"]
     }
 }
-
-variable "Repo.URL" {
-    value "https://github.com/OctopusSolutionsEngineering/Toronto_Team_Octopub_Database_Yaml" {}
-}
