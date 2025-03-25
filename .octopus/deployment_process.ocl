@@ -970,6 +970,7 @@ step "deploy-with-kustomize" {
             Octopus.Action.Kubernetes.ResourceStatusCheck = "True"
             Octopus.Action.Kubernetes.ServerSideApply.Enabled = "True"
             Octopus.Action.Kubernetes.ServerSideApply.ForceConflicts = "True"
+            Octopus.Action.RunOnServer = "false"
             Octopus.Action.Script.ScriptSource = "GitRepository"
         }
         worker_pool_variable = ""
@@ -978,7 +979,7 @@ step "deploy-with-kustomize" {
             default_branch = "main"
             git_credential_id = "GitCredentials-2322"
             git_credential_type = "Library"
-            repository_uri = "https://github.com/OctopusSolutionsEngineering/Toronto_Team_Octopub_Database_Yaml"
+            repository_uri = "#{Repo.URL}"
         }
 
         packages "worker-tools" {
