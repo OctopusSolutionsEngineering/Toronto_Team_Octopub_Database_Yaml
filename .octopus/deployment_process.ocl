@@ -979,7 +979,7 @@ step "deploy-with-kustomize" {
             default_branch = "main"
             git_credential_id = "GitCredentials-2322"
             git_credential_type = "Library"
-            repository_uri = "#{Repo.URL}"
+            repository_uri = "#{Project.RepoURL}"
         }
 
         packages "worker-tools" {
