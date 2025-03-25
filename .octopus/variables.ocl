@@ -11,7 +11,3 @@ variable "Octopus.Azure.Account" {
         action = ["create-namespace-if-not-exists"]
     }
 }
-
-variable "Project.RepoURL" {
-    value "#{Repo.URL}" {}
-}
