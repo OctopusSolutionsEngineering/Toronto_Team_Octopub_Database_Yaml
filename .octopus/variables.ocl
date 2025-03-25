@@ -13,7 +13,5 @@ variable "Octopus.Azure.Account" {
 }
 
 variable "Project.RepoURL" {
-    value "#{Repo.URL}" {
-        channel = ["default"]
-    }
+    value "#{Repo.URL}" {}
 }
